@@ -36,7 +36,8 @@ if (isset($_POST["login_user_with_product"])) {
                                     
                                     <div class="form-group">
                                        <label for="email">Email</label>
-                                        <input class="input input-borders" type="email" name="email" placeholder="Email" id="password" required>
+ID                                        
+<input class="input input-borders" type="email" name="email" placeholder="Email" id="password" required>
                                     </div>
                                     
                                     <div class="form-group">
