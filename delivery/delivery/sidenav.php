@@ -29,6 +29,35 @@
     <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/demo/demo.css" rel="stylesheet" />
+    <style>
+    
+
+    ul li ul.dropdown{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+        color: rgb(26 32 53);
+        background: rgb(26 32 53);
+        min-width: 100%; /* Set width of the dropdown */
+        background: rgb(26 32 53);
+        -webkit-tap-highlight-color: transparent;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+</style>
 </head>
 
 <body class="dark-edition">
@@ -51,57 +80,43 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="addsuppliers.php">
+                        <a class="nav-link" href="myprofile.php">
                             <i class="material-icons">person</i>
-                            <p>Add users</p>
+                            <p>My profile</p>
                         </a>
                         
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="add_products.php">
+                        <a class="nav-link" href="#">
                         <i class="material-icons">add</i>
-                        <p>Add Products</p>
+                        <p>Add Bank Account</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products_list.php">
+                    <a class="nav-link"> 
                         <i class="material-icons">list</i>
-                        <p>Product List</p>
-                        </a>
+                        <p>Salary Information</p>
+                    </a>
+                    <ul class="dropdown">
+                        <a class="nav-link" href="index.php"> <li>Latest Salary slip</li></a>
+                        <a class="nav-link" href="index.php">  <li>Cumulative Salary Slip</li></a>
+                        </ul>
                         
                     </li>
                      <li class="nav-item ">
                         <a class="nav-link" href="manageuser.php">
                             <i class="material-icons">person</i>
-                            <p>Manage users</p>
+                            <p>View Schedule</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-            <a class="nav-link" href="activity.php">
-              <i class="material-icons">timeline</i>
-              <p>Activities</p>
-            </a>
-          </li>
-                   
+
                     <li class="nav-item ">
                         <a class="nav-link" href="profile.php">
                             <icons-image _ngcontent-aye-c22="" _nghost-aye-c19=""><i _ngcontent-aye-c19="" class="material-icons icon-image-preview">settings</i></icons-image>
                             <p>setting</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="salesofday.php">
-                            <i class="material-icons">library_books</i>
-                            <p>sales</p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../../chat/login.php">
-                            <i class="material-icons">notifications</i>
-                            <p>Discussion</p>
-                        </a>
-                    </li>
+                    
                     <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.html">
                     <i class="material-icons">unarchive</i>
