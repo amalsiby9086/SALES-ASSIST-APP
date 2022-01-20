@@ -4,7 +4,19 @@
 include("./includes/db.php");
 if (isset($_POST['re_password']))
   {
-    $email=$_SESSION['admin_email'];
+    if (isset($_SESSION['admin_name']))
+    {
+    $email=$_SESSION['admin_name'];
+    }
+  $old_pass = $_POST['old_pass'];
+  $op = md5($old_pass);
+  $new_pass = $_POST['new_pass'];
+  $re_pass = $_POST['re_pass'];
+  $sql = "select * from `admin_info` where admin_password='$op' and admin_email='$email'" ;
+	$check_query = mysqli_query($con,$sql);
+	$count_email = mysqli_num_rows($check_query);
+	if($count_email > 0){
+   /* $email=$_SESSION['admin_email'];
 
   $old_pass = $_POST['old_pass'];
   $op = md5($old_pass);
@@ -14,11 +26,11 @@ if (isset($_POST['re_password']))
   $password_row = mysqli_fetch_array($password_query);
   $database_password = $password_row['admin_password'];
   if ($database_password == $op)
-    {
+    {*/
     if ($new_pass == $re_pass)
       {
         $pass = md5($re_pass);
-      $update_pwd = mysqli_query($con,"UPDATE admin_info set admin_password='$pass' where admin_id='6'");
+      $update_pwd = mysqli_query($con,"UPDATE admin_info set admin_password='$pass' where admin_email='$email'");
       echo "<script>alert('Update Sucessfully'); </script>";
       }
       else

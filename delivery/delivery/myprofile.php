@@ -15,6 +15,7 @@ include "topheader.php";
 
 ?>
       <!-- End Navbar -->
+      
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
@@ -131,6 +132,7 @@ include "topheader.php";
 </table>
 <?php
 echo "
+
 <a class='btn btn-primary pull-right' href='updateprofile.php?fname=$firstname&lname=$lastname&email=$email&mobile=$mobile&lisence=$lisence&address=$address1&state=$state'>Update</a>" ?>
 
                 </div>
@@ -138,6 +140,16 @@ echo "
             </div>
         </div>
       </div>
+      <?php  //success message
+            if(isset($_POST['success'])) {
+            $success = $_POST["success"];
+            echo "<div class='col-md-12 col-xs-12' id='product_msg'>
+          <div class='alert alert-success'>
+            <a href='#'' class='close' data-dismiss='alert' aria-label='close'>×</a>
+            <b>Update Sucessfully..!</b>
+          </div>
+        </div>";
+            }?>
       <?php
 include "footer.php";
 ?>
