@@ -123,7 +123,7 @@ if(isset($_POST['btn_save'])) {
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><b>PLease Fill all fields..!</b>
 			</div>
 		";
-      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	} 
@@ -135,7 +135,7 @@ if(isset($_POST['btn_save'])) {
 				<b>this $f_name is not valid..!</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -146,7 +146,7 @@ if(isset($_POST['btn_save'])) {
 				<b>this $l_name is not valid..!</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -157,7 +157,7 @@ if(isset($_POST['btn_save'])) {
 				<b>this $email is not valid..!</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -168,7 +168,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Password is weak</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";   
 		exit();
 	}
@@ -179,7 +179,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Password is weak</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -190,7 +190,7 @@ if(isset($_POST['btn_save'])) {
 				<b>password is not same</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
     
     exit();
@@ -202,7 +202,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Mobile number $mobile is not valid</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -213,7 +213,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Mobile number must be 10 digit</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -224,7 +224,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Lisence number $lis is not valid</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	}
@@ -239,7 +239,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Email Address or Lisence  is already available Try Another email address or lisence</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
 		exit();
 	} else {
@@ -252,7 +252,7 @@ if(isset($_POST['btn_save'])) {
 				<b>Data is added</b>
 			</div>
 		";
-    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/My-Shopping-main/admin/admin/addsuppliers.php';}, 5000);
+    echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addsuppliers.php';}, 5000);
    </script>";
             mysqli_close($con);
         }
