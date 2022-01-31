@@ -119,7 +119,7 @@ if(isset($_POST["getProduct"])){
                         <div class='col-md-4 col-xs-6' >
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
+										<img src='admin/admin/$pro_image' style='max-height: 170px;' alt=''>
 										
 									</div></a>
 									<div class='product-body'>
@@ -182,7 +182,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
                         <div class='col-md-4 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img  src='product_images/$pro_image'  style='max-height: 170px;' alt=''>
+										<img  src='admin/admin/$pro_image'  style='max-height: 170px;' alt=''>
 										
 									</div></a>
 									<div class='product-body'>
@@ -325,7 +325,7 @@ if (isset($_POST["Common"])) {
                     
                     <div class="product-widget">
 												<div class="product-img">
-													<img src="product_images/'.$product_image.'" alt="">
+													<img src="admin/admin/'.$product_image.'" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">'.$product_title.'</a></h3>
@@ -390,7 +390,7 @@ if (isset($_POST["Common"])) {
 							<td data-th="Product" >
 								<div class="row">
 								
-									<div class="col-sm-4 "><img src="product_images/'.$product_image.'" style="height: 70px;width:75px;"/>
+									<div class="col-sm-4 "><img src="admin/admin/'.$product_image.'" style="height: 70px;width:75px;"/>
 									<h4 class="nomargin product-name header-cart-item-name"><a href="product.php?p='.$product_id.'">'.$product_title.'</a></h4>
 									</div>
 									<div class="col-sm-6">

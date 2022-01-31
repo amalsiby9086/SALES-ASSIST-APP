@@ -10,9 +10,9 @@
 								<h3 class="footer-title">About Us</h3>
 								<p>This is my Small Database Management System mini project</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>Chikkmaglur</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>kottayam</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+91-8762911138</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>jyothirevanna63@gmail.com</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>abc@gmail.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -36,11 +36,7 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="#">Mobiles</a></li>
-									<li><a href="#">Men</a></li>
-									<li><a href="#">Women</a></li>
-									<li><a href="#">Kids</a></li>
-									<li><a href="#">Accessories</a></li>
+									
 								</ul>
 							</div>
 						</div>

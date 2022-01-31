@@ -16,7 +16,7 @@ if(isset($_POST["categoryhome"])){
 					<!-- NAV -->
 					<ul class='main-nav nav navbar-nav'>
                     <li class='active'><a href='index.php'>Home</a></li>
-                    <li><a href='store.php'>Electronics</a></li>
+                    <li><a href='store.php'>Products:</a></li>
 	";
 	if(mysqli_num_rows($run_query) > 0){
 		while($row = mysqli_fetch_array($run_query)){
@@ -86,7 +86,7 @@ if(isset($_POST["getProducthome"])){
                        <div class='product-widget'>
                                 <a href='product.php?p=$pro_id'> 
 									<div class='product-img'>
-										<img src='$pro_image' alt=''>
+										<img src='admin/admin/$pro_image' alt=''>
 									</div>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
@@ -110,7 +110,7 @@ if(isset($_POST["gethomeProduct"])){
 		$start = 0;
 	}
     
-	$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 71 AND 74";
+	$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id ";
 	$run_query = mysqli_query($con,$product_query);
 	if(mysqli_num_rows($run_query) > 0){
         
@@ -130,7 +130,7 @@ if(isset($_POST["gethomeProduct"])){
                                 <div class='col-md-3 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
+										<img src='admin/admin/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>
@@ -192,7 +192,7 @@ if(isset($_POST["get_seleted_Category"]) ||  isset($_POST["search"])){
                         <div class='col-md-4 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img  src='product_images/$pro_image' style='max-height: 170px;' alt=''>
+										<img  src='admin/admin/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>

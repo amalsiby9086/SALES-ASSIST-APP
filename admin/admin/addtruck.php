@@ -61,7 +61,7 @@ include "topheader.php";
                     
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Category</label>
+                        <label>Driver Name</label>
                          <select class="form-control" id="product_type" name="driver_name">
 							 <option style="background-color: #202940">Driver Name</option> 
                         <?php 
@@ -113,7 +113,7 @@ $number="/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/";
                   <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><b>PLease Fill all fields..!</b>
               </div>
           ";
-        echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addtruck.php';}, 2500);
+        echo "<script>setTimeout(function(){window.location.href = 'http://localhost/sales1/admin/admin/addtruck.php';}, 2500);
      </script>";
           exit();
       } 
@@ -127,7 +127,7 @@ $number="/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/";
                   <b>this $truck_no is not valid..!</b>
               </div>
           ";
-      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addtruck.php';}, 2500);
+      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/sales1/admin/admin/addtruck.php';}, 2500);
       </script>";
           exit();
       }
@@ -146,7 +146,7 @@ $number="/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/";
                   <b>Truck is already inserted. Try to insert another truck.</b>
               </div>
           ";
-      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addtruck.php';}, 2500);
+      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/sales1/admin/admin/addtruck.php';}, 2500);
      </script>";
           exit();
       }
@@ -158,7 +158,7 @@ $number="/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/";
                   <b>The Driver is already assigned to another truck</b>
               </div>
           ";
-     echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addtruck.php';}, 2500);
+     echo "<script>setTimeout(function(){window.location.href = 'http://localhost/sales1/admin/admin/addtruck.php';}, 2500);
      </script>";
   
       }
@@ -184,7 +184,7 @@ $number="/^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$/";
                   <b>Truck is added</b>
               </div>
           ";
-      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/Sales-assist-app/admin/admin/addtruck.php';}, 2500);
+      echo "<script>setTimeout(function(){window.location.href = 'http://localhost/sales1/admin/admin/addtruck.php';}, 2500);
      </script>";
               mysqli_close($con);
       }

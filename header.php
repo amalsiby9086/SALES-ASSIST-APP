@@ -123,7 +123,7 @@ session_start();
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +91-8762911138</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> jyothirevanna63@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> abc@gmail.com</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i>Kottayam</a></li>
 					</ul>
 					<ul class="header-links pull-right">
@@ -147,14 +147,12 @@ session_start();
 
                             }else{ 
                                 echo '
-                                <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> My Account</a>
-								  <div class="dropdownn-content">
-                                    <a href="" data-toggle="modal" data-target="#Modal_login"><i class="fa fa-sign-in" aria-hidden="true" ></i>Login</a>
-                                    <a href="" data-toggle="modal" data-target="#Modal_register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>
+								<li><a href="signupform.php"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                    <li><a href="loginform.php" ><i class="fa fa-sign-in" aria-hidden="true" ></i>Login</a></li>';
+                                   
                                     
-                                  </div>
-                                </div>';
+                                  
+                                
                                 
                             }
                                              ?>
@@ -208,7 +206,7 @@ session_start();
 							<div class="header-ctn">
 								<!-- Wishlist -->
 								<div>
-									<a href="https://github.com/Jyothi-R">
+									<a href="#">
 										<i class="fa fa-github"></i>
 										<span>Github</span>
 										
@@ -230,7 +228,7 @@ session_start();
 										</div>
 										
 										<div class="cart-btns">
-												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i>  edit cart</a>
+												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i>edit cart</a>
 											
 										</div>
 									</div>

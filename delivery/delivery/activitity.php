@@ -10,9 +10,9 @@ include("../../db.php");
                   <div class="card-icon">
                       <i class="material-icons">content_copy</i>
                   </div>
-                  <p class="card-category">Total users</p>
+                  <p class="card-category">Total order</p>
                   <h3 class="card-title">
-                      <?php  $query = "SELECT user_id FROM user_info"; 
+                      <!--?php  $query = "SELECT user_id FROM user_info"; 
                                       $result = mysqli_query($con, $query); 
                                        if ($result) 
                         { 
@@ -22,13 +22,13 @@ include("../../db.php");
                             printf(" " . $row); 
                         
                             // close the result. 
-                        }  ?>
+                        }  ?-->
                   </h3>
               </div>
 
           </div>
       </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+      <!--div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
           <div class="card card-stats">
               <div class="card-header card-header-success card-header-icon">
                   <div class="card-icon">
@@ -49,8 +49,8 @@ include("../../db.php");
               </div>
 
           </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+      </div-->
+      <!--div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
           <div class="card card-stats">
               <div class="card-header card-header-danger card-header-icon">
                   <div class="card-icon">
@@ -71,8 +71,8 @@ include("../../db.php");
               </div>
 
           </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+      </div-->
+      <!--div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
           <div class="card card-stats">
               <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
@@ -93,5 +93,5 @@ include("../../db.php");
               </div>
 
           </div>
-      </div>
+      </div-->
   </div>

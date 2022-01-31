@@ -19,14 +19,14 @@
         
       </div>
     
-      <div class="item">
+      <!--div class="item">
         <img src="img/banner4.jpg" alt="New York" style="width:100%;">
         
       </div>
       <div class="item">
         <img src="img/banner1.jpg" alt="New York" style="width:100%;">
         
-      </div>
+      </div-->
       <div class="item">
 	  <img src="img/abc.jpg" alt="New York" style="width:100%;">
         
@@ -61,10 +61,10 @@
 					<div class="col-md-4 col-xs-6">
 						<a href="product.php?p=78"><div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop01.png" alt="">
+								<img src="./img/images.jpg" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Laptop<br>Collection</h3>
+								<h3>Satisfied<br>Customer</h3>
 								<a href="product.php?p=78" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div></a>
@@ -75,10 +75,10 @@
 					<div class="col-md-4 col-xs-6">
 						<a href="product.php?p=72"><div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop03.png" alt="">
+								<img src="./img/download.jpg" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Accessories<br>Collection</h3>
+								<h3>Quality<br>Products</h3>
 								<a href="product.php?p=72" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div></a>
@@ -89,10 +89,10 @@
 					<div class="col-md-4 col-xs-6">
 						<a href="product.php?p=79"><div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop02.png" alt="">
+								<img src="./img/img1.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Cameras<br>Collection</h3>
+								<h3>Efficent<br>Customer Support</h3>
 								<a href="product.php?p=79" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
                             </div></a>
@@ -117,13 +117,10 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">New Products</h3>
+							<h3 class="title">Our Products</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-									<li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-									<li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-									<li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+									
 								</ul>
 							</div>
 						</div>
@@ -142,7 +139,7 @@
                     include 'db.php';
 								
                     
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 70 AND 75";
+					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id ";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -162,7 +159,7 @@
                                 
 								<div class='product'>
 									<a href='product.php?p=$pro_id'><div class='product-img'>
-										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
+										<img src='admin/admin/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
 											
 										</div>

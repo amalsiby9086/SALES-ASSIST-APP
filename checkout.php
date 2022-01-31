@@ -249,7 +249,7 @@ span.price {
 						$amount_ = $_POST['amount_'.$i];
 						
 						$quantity_ = $_POST['quantity_'.$i];
-						$total=$total+$amount_ ;
+						$total=$total+$quantity_*$amount_ ;
 						$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
 						$query = mysqli_query($con,$sql);
 						$row=mysqli_fetch_array($query);
@@ -257,7 +257,7 @@ span.price {
 					
 						echo "	
 
-						<tr><td><p>$item_number_</p></td><td><p>$item_name_</p></td><td ><p>$quantity_</p></td><td ><p>$amount_</p></td></tr>";
+						<tr><td><p>$item_number_</p></td><td><p>$item_name_</p></td><td ><p>$quantity_</p></td><td ><p>$total</p></td></tr>";
 						
 						$i++;
 					}

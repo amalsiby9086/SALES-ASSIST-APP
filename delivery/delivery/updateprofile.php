@@ -4,13 +4,14 @@ include("../../db.php");
 include "sidenav.php";
 include "topheader.php";
 
-/*$fname=$_GET['fname'];
-$lname=$_GET['lname'];
+$_GET['fname'];
+$_GET['lname'];
 $email=$_GET['email'];
-$mobile=$_GET['mobile'];
-$lisence=$_GET['lisence'];
-$address=$_GET['address'];
-$state=$_GET['state'];*/
+$_GET['mobile'];
+$_GET['lisence'];
+$_GET['address'];
+$_GET['state'];
+
 ?>
       <!-- End Navbar -->
       <div class="content">
@@ -43,7 +44,7 @@ $state=$_GET['state'];*/
                       <div class="col-md-12">
                         <div class="form-group bmd-form-group">
                           <label class="bmd-label-floating">Email</label>
-                          <input type="email" name="email" id="email" class="form-control" value="<?php echo $_GET['email']; ?>" disabled="">
+                          <input type="email" name="email" id="email" class="form-control" value="<?php echo $email; ?>" disabled="">
                         </div>
                       </div>
                     </div>
@@ -90,9 +91,12 @@ $state=$_GET['state'];*/
       <?php
       if(isset($_POST['btn_save']))
 {
+  if(!$con)
+  die ("Query 1 is inncorrect........");
+//$delid=$_Get['delid'];
 $f_name=$_POST['first_name'];
 $l_name=$_POST['last_name'];
-//$email=$_POST['email'];
+//$mail=$_POST['email'];
 $mobile_phn=$_POST['phone'];
 //$lis=$_POST['lisence'];
 $address1=$_POST['address'];
@@ -173,21 +177,24 @@ $number = "/^[0-9]+$/";
 	} */
   else 
   {
-		
-		mysqli_query($con,"UPDATE `deliveryboy_info` SET `boy_first_name`='$f_name',`boy_last_name`='$l_name',`boy_mobile`='$mobile_phn',`boy_address1`='$address1',`boy_address2`='$state1' WHERE 1") 
-			or die ("Query 1 is inncorrect........"); 
+   
+    //"UPDATE `deliveryboy_info` SET `boy_first_name`='',`boy_last_name`='',`boy_mobile`='',`boy_address1`='',`boy_address2`='$state1' WHERE 'deliboy_id'='$delid'"; 
+			 
+    $sql="UPDATE `deliveryboy_info` SET `boy_first_name`='$f_name',`boy_last_name`='$l_name',`boy_mobile`='$mobile_phn',`boy_address1`='$address1',`boy_address2`='$state1' WHERE `boy_email`='$email'";
+		 
+			
      /* echo "
 			/*<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
 				<b>Update is Sucessfully</b>
 			</div>*
 		";*/
-    
+    if(mysqli_query($con,$sql)){
     echo "<script type='text/javascript'>
-            window.location.href = 'http://localhost/Sales-assist-app/delivery/delivery/summit1.php?success=1';
-</script>";
-
+window.location.href = 'http://localhost/sales1/delivery/delivery/summit1.php?success=1'</script>";
+    }
             mysqli_close($con);
+    
         }
     }  
   

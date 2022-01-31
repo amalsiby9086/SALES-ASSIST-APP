@@ -90,6 +90,7 @@ include "topheader.php";
                         {
                             while($row=mysqli_fetch_assoc($result))
                             {
+                             // $delid=$row["deliboy_id"];
                               $firstname=$row[ "boy_first_name"];
                               $lastname=$row["boy_last_name"];
                               $mobile=$row["boy_mobile"];
