@@ -57,12 +57,12 @@
                         </a>
                         
                     </li>
-                    <li class="nav-item ">
+                    <!--li class="nav-item ">
                         <a class="nav-link" href="addtruck.php">
                             <i class="fa fa-truck"></i>
                             <p>Add Truck</p>
                         </a>
-                    </li>
+                    </li-->
                     <li class="nav-item ">
                         <a class="nav-link" href="add_products.php">
                         <i class="material-icons">add</i>

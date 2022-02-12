@@ -10,7 +10,7 @@ $result=mysqli_query($con,"select product_image from products where product_id='
 or die("query is incorrect...");
 
 list($picture)=mysqli_fetch_array($result);
-$path="../product_images/$picture";
+$path="$picture";
 
 if(file_exists($path)==true)
 {
@@ -57,12 +57,17 @@ include "topheader.php";
                     <tbody>
                       <?php 
 
-                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products  where  product_cat=2 or product_cat=3 or product_cat=4 Limit $page1,12")or die ("query 1 incorrect.....");
+                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products Limit $page1,12")or die ("query 1 incorrect.....");
 
-                        while(list($product_id,$image,$product_name,$price)=mysqli_fetch_array($result))
-                        {
-                        echo "<tr><td><img src='../../product_images/$image' style='width:50px; height:50px; border:groove #000'></td><td>$product_name</td>
-                        <td>$price</td>
+                        while($row=mysqli_fetch_array($result))
+                        { $product_image = $row["product_image"];
+                          $product_title = $row["product_title"];
+                                    $product_desc=$row["product_desc"];
+                                    $product_price = $row["product_price"];
+                                    $product_image = $row["product_image"];
+                        echo "<tr><td><img src=".$product_image." style='width:50px; height:50px; border:groove #000'></td>
+                        <td>$product_title</td>
+                        <td>$product_price</td>
                         <td>
                         <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Delete</a>
                         </td></tr>";

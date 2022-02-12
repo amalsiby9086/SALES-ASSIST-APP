@@ -299,10 +299,10 @@ if (isset($_POST["Common"])) {
 
 	if (isset($_SESSION["uid"])) {
 		//When user is logged in this query will execute
-		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
+		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_desc,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
 	}else{
 		//When user is not logged in this query will execute
-		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
+		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_desc,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
 	}
 	$query = mysqli_query($con,$sql);
 	if (isset($_POST["getCartItem"])) {
@@ -378,6 +378,7 @@ if (isset($_POST["Common"])) {
 					$n++;
 					$product_id = $row["product_id"];
 					$product_title = $row["product_title"];
+					$product_desc=$row["product_desc"];
 					$product_price = $row["product_price"];
 					$product_image = $row["product_image"];
 					$cart_item_id = $row["id"];
@@ -395,7 +396,7 @@ if (isset($_POST["Common"])) {
 									</div>
 									<div class="col-sm-6">
 										<div style="max-width=50px;">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+										<p style="text-align:justify">'.$product_desc.'</p>
 										</div>
 									</div>
 									
@@ -436,7 +437,7 @@ if (isset($_POST["Common"])) {
 				if (!isset($_SESSION["uid"])) {
 					echo '
 					
-							<a href="" data-toggle="modal" data-target="#Modal_register" class="btn btn-success">Ready to Checkout</a></td>
+							<a href="signupform.php"  class="btn btn-success">Ready to Checkout</a></td>
 								</tr>
 							</tfoot>
 				
@@ -466,8 +467,8 @@ if (isset($_POST["Common"])) {
 								}
 							  
 							echo   
-								'<input type="hidden" name="return" value="http://localhost/myfiles/public_html/payment_success.php"/>
-					                <input type="hidden" name="notify_url" value="http://localhost/myfiles/public_html/payment_success.php">
+								'<input type="hidden" name="return" value="http://localhost/sales1\payment_success.php"/>
+					                <input type="hidden" name="notify_url" value="http://localhost/sales1\payment_success.php">
 									<input type="hidden" name="cancel_return" value="http://localhost/myfiles/public_html/cancel.php"/>
 									<input type="hidden" name="currency_code" value="USD"/>
 									<input type="hidden" name="custom" value="'.$_SESSION["uid"].'"/>

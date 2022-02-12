@@ -6,7 +6,10 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $del_id=$_GET['del_id'];
 /*this is delet quer*/
+
+mysqli_query($con,"delete from `truvkdrier_info` where driver_id='$del_id'")or die("query is incorrect...");
 mysqli_query($con,"delete from deliveryboy_info where deliboy_id='$del_id'")or die("query is incorrect...");
+
 }
 
 include "sidenav.php";

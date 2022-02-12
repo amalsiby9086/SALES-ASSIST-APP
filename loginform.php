@@ -260,12 +260,25 @@ if (isset($_POST["login_user_with_product"])) {
                                     
                                     <div class="form-group1">
                                       &nbsp <label for="email">Email</label>
-                                        <input class="input input-borders" type="email" name="email" placeholder="Email" id="password" required style="border-radius: 40px">
+                                        <input class="input input-borders" type="email" name="email" placeholder="Email" id="email" required style="border-radius: 40px">
                                     </div>
                                     
                                     <div class="form-group1">
                                     &nbsp&nbsp<label for="email">Password</label>
-                                        <input class="input input-borders" type="password" name="password" placeholder="password" id="password" required style="border-radius: 40px">
+                                        <input class="input input-borders" type="password" name="password" placeholder="password" id="id_password" required style="border-radius: 40px">
+                                        <i class="fa fa-eye" id="togglePassword" style="margin-left: 475px;margin-top: -25px;cursor: pointer;"></i>
+                                        <script>
+        const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+    </script>
                                     </div>
                                     
                                     <div class="form-group1" >

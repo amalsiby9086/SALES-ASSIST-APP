@@ -238,8 +238,9 @@
     </div>
    <div>
    </div>
-    <div class="form-group1"> &nbsp&nbsp<a href="index.php" class="fa fa-arrow-left">
-                                           Back to Home
+    <div class="form-group1"> 
+      <a href="index.php" class="text-pad" style=" padding-left: 1%;" >
+                                           <i class="fa fa-arrow-left">Back to Home</i>
                                        </a>
                                        <a href="loginform.php" class="text-pad" style="padding-left: 38%;">Already have an Account ? then login</a> </div>
     

@@ -272,7 +272,7 @@ if (isset($_POST["login_user_with_product"])) {
                                         
                                     </div>
                                     <div class="form-group1">
-                                        <input class="primary-btn btn-block" name="reset_button"   type="submit"  Value="Login"></div>
+                                        <input class="primary-btn btn-block" name="reset_button"   type="submit"  Value="Submit"></div>
                                         <!--div class="panel-footer"><div class="alert alert-danger"><h4 id="e_msg"></h4></div></div-->
                                     
                                     	

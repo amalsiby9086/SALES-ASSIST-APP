@@ -131,7 +131,7 @@ session_start();
 						<li><?php
                              include "db.php";
                             if(isset($_SESSION["uid"])){
-                                $sql = "SELECT first_name FROM user_info WHERE user_id='$_SESSION[uid]'";
+                                $sql = "SELECT * FROM user_info WHERE user_id='$_SESSION[uid]'";
                                 $query = mysqli_query($con,$sql);
                                 $row=mysqli_fetch_array($query);
                                 
@@ -139,7 +139,7 @@ session_start();
                                <div class="dropdownn">
                                   <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> HI '.$row["first_name"].'</a>
                                   <div class="dropdownn-content">
-                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" aria-hidden="true" ></i>My Profile</a>
+                                    <a href="profile.php" ><i class="fa fa-user-circle" aria-hidden="true" ></i>My Profile</a>
                                     <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Log out</a>
                                     
                                   </div>
@@ -177,7 +177,7 @@ session_start();
 							<div class="header-logo">
 								<a href="#" class="logo">
 								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
-                                        Online Shop
+                                        Sales Optimizer
                                     </font>
 									
 								</a>
@@ -207,8 +207,8 @@ session_start();
 								<!-- Wishlist -->
 								<div>
 									<a href="#">
-										<i class="fa fa-github"></i>
-										<span>Github</span>
+										<i class="fa fa-facebook"></i>
+										<span>Facebook</span>
 										
 									</a>
 								</div>
